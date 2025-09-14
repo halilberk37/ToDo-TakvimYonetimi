@@ -1,7 +1,6 @@
 # 📅 TodoCalendar - To-Do ve Takvim Yönetim Sistemi
 
-Modern ve kullanıcı dostu bir to-do listesi ve takvim yönetim sistemi. Django Rest Framework ile geliştirilmiş, JWT tabanlı kimlik doğrulama sistemi ile güvenli API'ler sunar.
-
+Cursor ile birlikte geliştirmeye çalıştığım bir deneme uygulaması. Uygulama nihai halinde değil eksik bırakıldı. Teme anlamda öğrenmek istediğim kısımları görüp geliştirmeyi bıraktım. İncelemek isteyenler için yüklendi.
 ## ✨ Özellikler
 
 ### 🔐 Kimlik Doğrulama
@@ -283,11 +282,6 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
 
-## 📞 İletişim
-
-- **Geliştirici**: Halil İbrahim Berk
-- **Email**: halilibrahimberk@example.com
-- **Proje Linki**: [GitHub Repository](https://github.com/username/todocalendar)
 
 ## 🙏 Teşekkürler
 
