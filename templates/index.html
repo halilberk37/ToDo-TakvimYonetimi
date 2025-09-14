@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}TodoCalendar - Ana Sayfa{% endblock %}
+
+{% block content %}
+<!-- Welcome Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="jumbotron bg-gradient text-white p-5 rounded">
+            <h1 class="display-4">
+                <i class="fas fa-calendar-check me-3"></i>
+                TodoCalendar'a Hoş Geldiniz!
+            </h1>
+            <p class="lead">Basit ve etkili to-do listesi ve takvim yönetim sistemi</p>
+            <div id="authButtons" class="d-none">
+                <button class="btn btn-light btn-lg me-2" onclick="showLogin()">
+                    <i class="fas fa-sign-in-alt me-1"></i>Giriş Yap
+                </button>
+                <button class="btn btn-outline-light btn-lg" onclick="showRegister()">
+                    <i class="fas fa-user-plus me-1"></i>Kayıt Ol
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Dashboard -->
+<div id="dashboard" class="d-none">
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body text-center">
+                    <h3 id="totalTodos">0</h3>
+                    <p class="mb-0">Toplam Todo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body text-center">
+                    <h3 id="completedTodos">0</h3>
+                    <p class="mb-0">Tamamlanan</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body text-center">
+                    <h3 id="pendingTodos">0</h3>
+                    <p class="mb-0">Bekleyen</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body text-center">
+                    <h3 id="totalEvents">0</h3>
+                    <p class="mb-0">Toplam Etkinlik</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="row">
+        <!-- Todo Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-tasks me-2"></i>Todos
+                    </h5>
+                    <button class="btn btn-primary btn-sm" onclick="showAddTodoModal()">
+                        <i class="fas fa-plus me-1"></i>Yeni Todo
+                    </button>
+                </div>
+                <div class="card-body">
+                    <!-- Todo List -->
+                    <div id="todoList" class="list-group">
+                        <div class="text-center text-muted py-3">
+                            <i class="fas fa-tasks fa-2x mb-2"></i>
+                            <p>Henüz todo eklenmemiş</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-calendar me-2"></i>Etkinlikler
+                    </h5>
+                    <button class="btn btn-success btn-sm" onclick="showAddEventModal()">
+                        <i class="fas fa-plus me-1"></i>Yeni Etkinlik
+                    </button>
+                </div>
+                <div class="card-body">
+                    <!-- Events List -->
+                    <div id="eventsList" class="list-group">
+                        <div class="text-center text-muted py-3">
+                            <i class="fas fa-calendar fa-2x mb-2"></i>
+                            <p>Henüz etkinlik eklenmemiş</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Todo Modal -->
+<div class="modal fade" id="addTodoModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-plus me-2"></i>Yeni Todo
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addTodoForm">
+                    <div class="mb-3">
+                        <label for="todoTitle" class="form-label">Başlık *</label>
+                        <input type="text" class="form-control" id="todoTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="todoDescription" class="form-label">Açıklama</label>
+                        <textarea class="form-control" id="todoDescription" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="todoPriority" class="form-label">Öncelik</label>
+                            <select class="form-select" id="todoPriority">
+                                <option value="low">Düşük</option>
+                                <option value="medium" selected>Orta</option>
+                                <option value="high">Yüksek</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="todoDueDate" class="form-label">Bitiş Tarihi</label>
+                            <input type="date" class="form-control" id="todoDueDate">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="todoImportant">
+                            <label class="form-check-label" for="todoImportant">
+                                Önemli
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-1"></i>Kaydet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Event Modal -->
+<div class="modal fade" id="addEventModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-calendar-plus me-2"></i>Yeni Etkinlik
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addEventForm">
+                    <div class="mb-3">
+                        <label for="eventTitle" class="form-label">Başlık *</label>
+                        <input type="text" class="form-control" id="eventTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDescription" class="form-label">Açıklama</label>
+                        <textarea class="form-control" id="eventDescription" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="eventStartDate" class="form-label">Başlangıç Tarihi *</label>
+                            <input type="datetime-local" class="form-control" id="eventStartDate" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="eventEndDate" class="form-label">Bitiş Tarihi *</label>
+                            <input type="datetime-local" class="form-control" id="eventEndDate" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventLocation" class="form-label">Konum</label>
+                        <input type="text" class="form-control" id="eventLocation">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-1"></i>Kaydet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

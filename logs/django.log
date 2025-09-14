@@ -1,0 +1,750 @@
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 167848
+Not Found: /home
+"GET /home HTTP/1.1" 404 3497
+"GET /admin/ HTTP/1.1" 200 12464
+"GET /admin/auth/group/ HTTP/1.1" 200 11811
+"GET /admin/jsi18n/ HTTP/1.1" 200 8722
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 168016
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/template/base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 165138
+- Broken pipe from ('127.0.0.1', 57392)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19179
+"GET /admin/ HTTP/1.1" 302 0
+"GET /api-info/ HTTP/1.1" 200 652
+"GET / HTTP/1.1" 200 19179
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"POST /api/todos/ HTTP/1.1" 201 178
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 200 0
+"GET /static/js/app.js HTTP/1.1" 200 20243
+"GET / HTTP/1.1" 200 19179
+"GET / HTTP/1.1" 200 19179
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/register/
+"POST /api//auth/register/ HTTP/1.1" 404 3543
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 19179
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19179
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Watching for file changes with StatReloader
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"GET / HTTP/1.1" 200 19179
+"GET / HTTP/1.1" 200 19179
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 200 22708
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+"GET / HTTP/1.1" 200 19179
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 200 25788
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3629
+"GET /admin/ HTTP/1.1" 200 12464
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3629
+"GET / HTTP/1.1" 200 19179
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3629
+"GET /static/css/style.css HTTP/1.1" 200 0
+"GET /static/js/app.js HTTP/1.1" 200 25788
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+Not Found: /api//auth/login/
+"POST /api//auth/login/ HTTP/1.1" 404 3534
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3629
+"GET /static/js/app.js HTTP/1.1" 200 25822
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"POST /api/todos/ HTTP/1.1" 201 198
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+"GET / HTTP/1.1" 200 19179
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 704
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 704
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 19179
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 704
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 19179
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 704
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 19179
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/todos/ HTTP/1.1" 200 704
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"POST /api/todos/ HTTP/1.1" 201 177
+"POST /api/todos/ HTTP/1.1" 201 189
+"POST /api/todos/ HTTP/1.1" 201 188
+"POST /api/todos/ HTTP/1.1" 201 188
+"GET / HTTP/1.1" 200 19179
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 1994
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 19179
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 200 25822
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"POST /api/todos/ HTTP/1.1" 201 181
+"POST /api/todos/ HTTP/1.1" 201 186
+"GET / HTTP/1.1" 200 19179
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 19179
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16532
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 16532
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 16532
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"GET / HTTP/1.1" 200 16532
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 2636
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/statistics/ HTTP/1.1" 200 133
+"GET /api/calendar/statistics/ HTTP/1.1" 200 132
+"POST /api/todos/ HTTP/1.1" 201 184
+"POST /api/todos/ HTTP/1.1" 201 184
+"POST /api/todos/ HTTP/1.1" 201 184
+"POST /api/todos/ HTTP/1.1" 201 183
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16532
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 200 19405
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"GET /api/todos/ HTTP/1.1" 200 3924
+"POST /api/todos/ HTTP/1.1" 201 184
+Bad Request: /api/calendar/events/
+"POST /api/calendar/events/ HTTP/1.1" 400 107
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"POST /api/todos/ HTTP/1.1" 201 171
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/todos/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/todos/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/todos/urls.py changed, reloading.
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/todos/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/urls.py changed, reloading.
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16532
+"POST /api/auth/login/ HTTP/1.1" 200 798
+"POST /api/todos/ HTTP/1.1" 201 235
+Internal Server Error: /api/calendar/events/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `start_time` is not valid for model `Event` in `calendar_app.serializers.EventCreateSerializer`.
+"POST /api/calendar/events/ HTTP/1.1" 500 148897
+"GET / HTTP/1.1" 200 16532
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 200 19405
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 4870
+Internal Server Error: /api/calendar/events/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/filters.py", line 327, in filter_queryset
+    return queryset.order_by(*ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2249, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'start_time' into field. Choices are: attachments, calendar, calendar_id, created_at, description, end_datetime, event_type, id, is_all_day, is_important, is_private, is_recurring, location, participants, recurrence_end_date, recurrence_pattern, reminder_minutes, reminders, send_notification, start_datetime, title, updated_at, user, user_id
+"GET /api/calendar/events/ HTTP/1.1" 500 125272
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16532
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 4870
+"GET /api/calendar/events/ HTTP/1.1" 200 52
+"POST /api/auth/login/ HTTP/1.1" 200 798
+Internal Server Error: /api/calendar/events/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "send_notification" of relation "calendar_app_event" violates not-null constraint
+DETAIL:  Failing row contains (3, Test Event, Test etkinlik, 2025-09-15 07:00:00+00, 2025-09-15 08:00:00+00, f, f, null, null, other, Test Konum, f, f, 15, null, 2025-09-14 19:04:44.80514+00, 2025-09-14 19:04:44.805144+00, 2, 3).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/views.py", line 65, in perform_create
+    serializer.save(user=self.request.user)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/serializers.py", line 60, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/models.py", line 134, in save
+    super().save(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "send_notification" of relation "calendar_app_event" violates not-null constraint
+DETAIL:  Failing row contains (3, Test Event, Test etkinlik, 2025-09-15 07:00:00+00, 2025-09-15 08:00:00+00, f, f, null, null, other, Test Konum, f, f, 15, null, 2025-09-14 19:04:44.80514+00, 2025-09-14 19:04:44.805144+00, 2, 3).
+
+"POST /api/calendar/events/ HTTP/1.1" 500 225516
+Internal Server Error: /api/calendar/events/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "send_notification" of relation "calendar_app_event" violates not-null constraint
+DETAIL:  Failing row contains (4, Test Event, Test etkinlik, 2025-09-15 07:00:00+00, 2025-09-15 08:00:00+00, f, f, null, null, other, Test Konum, f, f, 15, null, 2025-09-14 19:05:54.943045+00, 2025-09-14 19:05:54.943052+00, 2, 3).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/views.py", line 65, in perform_create
+    serializer.save(user=self.request.user)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/serializers.py", line 60, in create
+    return super().create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/halilibrahimberk/Desktop/Yazılım/pythonExamples/proje2/calendar_app/models.py", line 134, in save
+    super().save(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "send_notification" of relation "calendar_app_event" violates not-null constraint
+DETAIL:  Failing row contains (4, Test Event, Test etkinlik, 2025-09-15 07:00:00+00, 2025-09-15 08:00:00+00, f, f, null, null, other, Test Konum, f, f, 15, null, 2025-09-14 19:05:54.943045+00, 2025-09-14 19:05:54.943052+00, 2, 3).
+
+"POST /api/calendar/events/ HTTP/1.1" 500 225527
+"POST /api/calendar/events/ HTTP/1.1" 201 278
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 16532
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/js/app.js HTTP/1.1" 304 0
+"GET /api/auth/profile/ HTTP/1.1" 200 301
+"GET /api/todos/ HTTP/1.1" 200 4870
+"GET /api/calendar/events/ HTTP/1.1" 200 478
+"POST /api/todos/ HTTP/1.1" 201 241
